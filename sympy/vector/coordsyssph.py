@@ -5,7 +5,6 @@ from sympy.core.compatibility import string_types, range
 from sympy.core.cache import cacheit
 from sympy.vector.orienters import (Orienter, AxisOrienter, BodyOrienter,
                                     SpaceOrienter, QuaternionOrienter)
-from sympy.vector.coordsysrect import CoordSysCartesian
 import sympy.vector
 
 
