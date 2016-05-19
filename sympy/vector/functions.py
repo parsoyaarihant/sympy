@@ -92,7 +92,6 @@ def express(expr, system, system2=None, variables=False):
             else:
                 if isinstance(system, CoordSysCartesian):
                     if isinstance(system2, CoordSysSpherical):
-                        print(parts[i].components[system.j])
                         x = parts[i].components[system.i]
                         y = parts[i].components[system.j]
                         z = parts[i].components[system.k]
