@@ -1142,16 +1142,13 @@ class PrettyPrinter(Printer):
         return pform
 
     def _print_SingularityFunction(self, e):
-        if self._use_unicode:
-            shift = self._print(e.args[0]-e.args[1])
-            n = self._print(e.args[2])
-            base = prettyForm("<")
-            base = prettyForm(*base.right(shift))
-            base = prettyForm(*base.right(">"))
-            pform = base**n
-            return pform
-        else:
-            return self._print_Function(e)
+        shift = self._print(e.args[0]-e.args[1])
+        n = self._print(e.args[2])
+        base = prettyForm("<")
+        base = prettyForm(*base.right(shift))
+        base = prettyForm(*base.right(">"))
+        pform = base**n
+        return pform
 
     def _print_gamma(self, e):
         if self._use_unicode:
